@@ -1,0 +1,5 @@
+.git
+myprojectenv
+__pycache__
+myproject.sock
+wsgi.py

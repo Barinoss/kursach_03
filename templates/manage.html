@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+
+{% block body %}
+    <table>
+        <tr id="table_first_row">
+            <th>IP</th>
+            <th>First_Access</th>
+            <th>Last_Access</th>
+        </tr>
+        {% for string in clients %}
+            <tr class="table_rows">
+                {% for object in string %}
+                <th>{{ object }}</th>
+                {% endfor %}
+            </tr>
+        {% endfor %}
+    </table>
+{% endblock %}

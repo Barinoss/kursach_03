@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+
+{% block body %}
+    <table>
+        <tr id="table_first_row">
+            <th>Прізвище</th>
+            <th>ДатаНар</th>
+            <th>Ріст</th>
+            <th>Код Класу</th>
+        </tr>
+        {% for name in names %}
+            <tr class="table_rows">
+                {% for data in name %}
+                <th>{{ data }}</th>
+                {% endfor %}
+            </tr>
+        {% endfor %}
+    </table>
+{% endblock %}

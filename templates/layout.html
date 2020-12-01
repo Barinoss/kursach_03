@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-T8SKF6R');
+    </script>
+    <!-- End Google Tag Manager -->
+    <title>My Webpage</title>
+    <style>
+            table {
+            border: 2px solid black;
+            border-collapse: collapse;
+            }
+            @media (min-width: 1300px) {
+            table {
+            width: 1300px;
+            }}
+            @media (max-width: 1299px) {
+            table {
+            width: 100%;
+            }}
+            @media (max-width: 800px) {
+            td {
+            background-color: red;
+            }}
+        th {
+            border: 1px solid black;
+            padding: 5px;
+            text-align: center;
+            }
+        h1 {
+            border: 1px solid black;
+            }
+        #p1 {
+            font-size: 32px;
+            color: red;
+            }
+        #p2 {
+            font-size: 24px;
+            }
+        #p3 {
+            font-size: 16px;
+            }
+        .start {
+            font-size: 200%;
+            color: blue;
+            }
+        ol > li {
+            color: red;
+            }
+        .but {
+         font-size: 16px;
+         color: brown;
+         }
+        #table_first_row {
+            background-color: green;
+            }
+
+    </style>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T8SKF6R"
+            height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+<!-- End Google Tag Manager (noscript) -->
+<div>
+    <a class="but" href="/">Home</a>
+    <a class="but" href="kursach">Kursach</a>
+</div>
+
+{% block body %}
+{% endblock %}
+</body>
+</html>

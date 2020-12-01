@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+
+{% block body %}
+<div>
+    <h2>Введите частоты сигнала через запятые: (1, 2, 3...)</h2>
+</div>
+<div>
+    <form action="" method="post">
+        <input type="text" name="freqs" placeholder="Введите частоты сигнала" value="{{ freq }}">
+        <input type="text" name="threshold" placeholder="Введите трешхолд" value="50">
+        <input type="text" name="noise" placeholder="Введите силу шумов" value="2">
+        <button>Submit</button>
+    </form>
+</div>
+<div>
+    <h1>Частоты: {{ freq }}</h1>
+</div>
+<div>
+    <img src="static/{{ image_name }}">
+</div>
+
+{% endblock %}
