@@ -2,18 +2,21 @@
 
 {% block body %}
 <div>
-    <h2>Введіть частоти сигналу через коми: (1, 2, 3...)</h2>
+    <h2>Введіть сигнал: ([1, 2, 3...])</h2>
 </div>
 <div>
     <form action="" method="post">
-        <input type="text" name="freqs" placeholder="Введіть частоти сигналу" value="{{ freq }}">
+        <input type="text" name="signal" placeholder="Введіть сигнал">
         <input type="text" name="threshold" placeholder="Введіть мінімальний поріг" value="50">
-        <input type="text" name="noise" placeholder="Введіть силу шумів" value="2">
         <button>Надати</button>
     </form>
 </div>
 <div>
-    <h1>Частоти: {{ freq }}</h1>
+    <details>
+<summary>Сигнал:</summary>
+ {{ signal2 }}
+</details>
+
 </div>
 <div>
     <img src="static/{{ image_name }}" width="800">
